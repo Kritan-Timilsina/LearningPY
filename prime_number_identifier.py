@@ -7,6 +7,6 @@ def prime(n):
     if flag==0:
         print("You Entered Prime number.")
     else :
-        print("You didn't entered prime number")
+        print("You entered composite number.")
 prime(n)
 
