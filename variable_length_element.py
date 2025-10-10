@@ -1,4 +1,4 @@
-def sum(init_sum,*elements):
+def sum(init_sum,*elements):# it creates tuples 
     res=init_sum
     for x in elements:
         res=res+x
