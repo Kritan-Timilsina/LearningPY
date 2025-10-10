@@ -1,8 +1,8 @@
-def sum(*elements):
-    res=0
+def sum(init_sum,*elements):
+    res=init_sum
     for x in elements:
         res=res+x
-        return res
+    return res
 print(sum(2,20))
 print()
 print(sum(20,30,40))
