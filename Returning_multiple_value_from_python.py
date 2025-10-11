@@ -5,3 +5,5 @@ def add_multiply(x,y):
 s,m=add_multiply(5,4)
 print(s)
 print(m)
+
+"""first it creates a tuple and returns multiple value"""
