@@ -18,3 +18,21 @@ print("Greatest common divisor:",gcd)
 import math
 gcd2=math.gcd(a,b)
 print(gcd2)
+"""#User function Template for python3
+a = int(input())
+b = int(input())
+def minFunction(a,b):
+    if(a<b):
+        return a
+    else:
+        return b
+gcd=1
+min_val=minFunction(a,b)
+for i in range(1,min_val+1):
+    if (a%i==0 and b%i==0):
+        gcd=i
+    else:
+        continue
+print(gcd)
+# Your code here
+"""
