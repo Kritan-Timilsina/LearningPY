@@ -1,8 +1,11 @@
-name="ABC"
-course="python Course"
-s="Welcome %s to the %s "%(name,course)
-print(s)
-s1="Welcome {0} to the {1}". format(name,course)
-print(s1)
-s3=f"Welcome{name} to the {course}"
+s1="Kritan"
+print(len(s1))
+s2=s1.upper()
+print(s2)
+s3=s2.lower()
 print(s3)
+print(s1.islower())
+print(s2.isupper())
+k1="Kritan is studying python"
+print(k1.startswith("Kritan"))
+print(k1.endswith("Python"))
