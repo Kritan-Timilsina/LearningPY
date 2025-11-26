@@ -8,3 +8,10 @@ def decToBin(n):
         n=n//2
     return (res[::-1])
 print("Binary equivalent:",decToBin(n))
+
+""""
+or 
+def DectoBin(n):
+res=bin(n)
+return res[2:]
+"""
