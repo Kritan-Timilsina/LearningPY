@@ -1,10 +1,9 @@
-n=input("Enter the number:")
-def binToDec(n):
-    res=0
-    p=1
-    for x in reversed (n):
-        res=res+int(x)*p
-        p=p*2
-    return res
-r=binToDec(n)
-print(r)
+def fun1():
+    print("Inside Fun1")
+def fun2(f):
+    print("inside fun")
+    f()
+f=fun1
+f()
+print()
+fun2(f)
