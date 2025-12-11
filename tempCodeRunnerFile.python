@@ -1,11 +1,14 @@
+class Employee:
+    compName="ap"
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
 
-def fudge(func):
-    def inner():
-        print("You added fudge in your icecream")
-        func()
-    return inner
+    @classmethod
+    def setCompName(cls,cName):
+        cls.compName=cName
 
-@fudge
-def icecream():
-    print("Here's your icecream")
-icecream()
+Employee.setCompName("Hello")
+print(Employee.compName)
+e=Employee("Kritan",20)
+print(e.compName)
