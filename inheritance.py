@@ -13,5 +13,5 @@ class Employee(Person):
 e=Employee(101,"Kritan",700000)
 e.printDetails()
 
-In Python, super() is used to call a method from a parent (base) class inside a child (derived) class.
+# In Python, super() is used to call a method from a parent (base) class inside a child (derived) class.
 # It is most commonly used to access the parent class’s constructor (__init__) or overridden methods.
