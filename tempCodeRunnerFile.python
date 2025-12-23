@@ -1,20 +1,24 @@
-class BankAccount:
-  def __init__(self,__account_no,__balance):
-   self.__account_no=__account_no
-   self.__balance=__balance
+class Academic:
+    def __init__(self,marks):
+        self.marks=marks
+    
+    def display_academic(self):
+        print(self.marks)
 
-  def deposit(self,amount):
-   self.__balance=self.__balance+amount
+class Sports:
+    def __init__(self,score):
+        self.score=score
+    def display_sports(self):
+        print(self.score)
 
-  def withdraw(self,amount):
-   self.__balance=self.__balance-amount
+class Student(Academic,Sports):
+    def __init__(self,marks,score):
+        Academic.__init__(self,marks)
+        Sports.__init__(self,score)
 
-  def display(self):
-   print(f"Account no:{self.__account_no}\nBalance:{self.__balance}")
+    def display(self):
+        self.display_academic()
+        self.display_sports()
 
-p1=BankAccount(101,10001)
-p1.display()
-p1.deposit(100)
-p1.display()
-p1.withdraw(100)
-p1.display()
+s1=Student(1000,100)
+s1.display()
