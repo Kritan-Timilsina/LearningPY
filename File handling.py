@@ -8,8 +8,11 @@ f1.write("This is first time when i am inserting in file ")
 
 f2=open("writingfile.txt",'a')
 f2.write("Laptop")
-"""for data in f:
-    print(data)"""
+f.seek(0)# yo line le chai garera pheri file ko starting position ma gayo 
+for data in f:
+    print(data)
+position=f.tell()# tell le chai kun byte ma cha tyo bhancha 
+print(position)
 f.close()
 f1.close()
 f2.close()
