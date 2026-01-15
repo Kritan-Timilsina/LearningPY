@@ -1,0 +1,67 @@
+instructions.txt
+Close opened folder in VSCode:
+Ctrl + K followed by F
+
+Open new empty folder in VSCode with drag and drop
+
+Open lower terminal panel with Ctrl + J
+
+Note: For terminal commands, Mac users must write
+python3 instead of python and pip3 instead of pip
+
+(1) Check which python is being used
+where python # for Windows users
+which python # for Linux and Mac users
+
+(2) Create a virtual environment
+python -m venv venv
+
+(3) Activate the virtual environment
+   (this is manual way,
+   but easier way is to select with Ctrl+Shift+P)
+.venv\Scripts\activate # for Windows
+source venv/bin/activate # for Linux and Mac users
+
+deactivate # for deactivation
+
+(4) Check which python is being used again
+   (must be within our project folder)
+where python # for Windows users
+which python # for Linux and Mac users
+
+(5) Install Django (which auto installs dependencies)
+pip install Django
+
+(6) Create requirements.txt file to track dependencies
+pip freeze > requirements.txt
+
+(7) Start a new django project
+   (this creates project folder called home in current folder)
+   (also creates manage.py file in current folder)
+django-admin startproject home .
+
+Note: NATC means not a terminal command
+
+(7.5) [NATC] Modify settings.py timezone value, change to Asia/Kathmandu which is the same all over Nepal
+
+(8) Check project creation success
+   (this also creates a lightweight sqlite database)
+python manage.py runserver
+
+(9) Create a new django app
+   (keep in mind that both project and app folder created
+   are valid python packages due to presence of __init__.py file)
+python manage.py startapp pages
+
+(9.5) [NATC] Modify settings.py again to include our new app
+
+(10) Make migrations and run the server again
+python manage.py migrate
+python manage.py runserver
+
+Next NATC Steps:
+- First create a template pages/templates/pages/index.html
+- Create a function-based view to render this template called home
+- Create a new urls.py file in pages and setup path registering view there
+- Include this url configuration in the project urls.py
+- Refresh the home page to see the results
