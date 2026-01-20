@@ -17,9 +17,9 @@ def track_calls(func):
         nonlocal count
         result=func(*args,**kwargs)
         count+=1
-        print(f"{func.__name__} is runned {count} no of times")
-        
-        return result*2
+        print(f"Call {count} of {func.__name__}")
+        if result is not None:
+            return result * 2
     return wrapper
 
 
@@ -31,6 +31,7 @@ def person(*args,**kwargs):
     print("The given Keyword Arguments are:")
     for key,value in kwargs.items():
         print(f"{key}:{value}")
+    
 
 person ("Kritan",21, Address="Baneshwor",Uni="Pokhara")
-
+person ("Aarjan",21, Address="Mulpani",Uni="Pokhara")
