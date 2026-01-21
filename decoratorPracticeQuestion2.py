@@ -10,7 +10,6 @@ def repeat_twice(func):
     def wrapper():
         func()
         func()
-        func()
     return wrapper
 
 @repeat_twice
