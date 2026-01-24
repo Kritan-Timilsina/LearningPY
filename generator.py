@@ -1,6 +1,6 @@
 import sys
 def creater():
-    lst=[]
+    list=[]
     i=1
     while i<=200:
         list.append(i)
@@ -8,7 +8,7 @@ def creater():
     return list
 
 print(creater())
-z=sys.getsizeof(lst)
+z=sys.getsizeof(list)
 print(z)
 #excess memory is used 
 #now using generator -it generates one at a time 
