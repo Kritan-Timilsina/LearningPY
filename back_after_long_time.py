@@ -21,6 +21,29 @@ def oecounter(n):
         else:
             oc+=1
     print(f"Total no of odd number between 1 and {n} is {oc}\nTotal number of even number between 1 and {n} is {ec}")
-n=int(input("Enter n:"))
+#n=int(input("Enter n:"))
 
-oecounter(n)
+#oecounter(n)
+# Write a function:
+
+# Input: number
+# Output:
+# Prime or Not
+# Palindrome or Not
+
+def isPrime(n):
+    c=0
+    if n<=1:
+        print(f"{n} is not a Prime number")
+        return 
+    for i in range(1,n+1):
+        if n%i==0:
+            c+=1
+        
+    if c==2:
+        print(f"{n} is a Prime number")
+    else:
+        print(f"{n} is not a Prime number")
+
+n=int(input("Enter value of n:"))
+isPrime(n)
