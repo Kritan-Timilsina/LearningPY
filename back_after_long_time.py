@@ -60,7 +60,7 @@ def isPrimeOptimized(n):
             return 
     print(f"{n} is a Prime number")
 
-isPrimeOptimized(n)
+#isPrimeOptimized(n)
 
 
 def isPalindrome(num):
@@ -68,4 +68,33 @@ def isPalindrome(num):
         print(f"{num} is Palindrome")
     else:
         print(f"{num} is not Palindrome")
-isPalindrome(n)
+#isPalindrome(n)
+
+
+def isPrime_Palindrome(n):
+    #assuming 
+    pri=True
+    pal=True
+    if n<=1:
+            pri=False
+    
+    else:
+        for i in range(2,int(n**0.5)+1):
+            if n%i==0:
+                pri=False
+                break
+            
+    if str(n)==str(n)[::-1]:
+        pal=True
+   
+    if pri==True:
+        print(f"{n} is a Prime number")
+    else:
+        print(f"{n} is not a Prime number")
+
+    if pal==True:
+        print(f"{n} is a Palindrome number")
+    else:
+        print(f"{n} is not a Palindrome number")
+
+isPrime_Palindrome(n)
