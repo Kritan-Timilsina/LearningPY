@@ -61,3 +61,11 @@ def isPrimeOptimized(n):
     print(f"{n} is a Prime number")
 
 isPrimeOptimized(n)
+
+
+def isPalindrome(num):
+    if str(num)==str(num)[::-1]:
+        print(f"{num} is Palindrome")
+    else:
+        print(f"{num} is not Palindrome")
+isPalindrome(n)
