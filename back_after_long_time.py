@@ -74,7 +74,7 @@ def isPalindrome(num):
 def isPrime_Palindrome(n):
     #assuming 
     pri=True
-    pal=True
+    pal=False
     if n<=1:
             pri=False
     
@@ -104,34 +104,34 @@ Write a function isPalindrome(n) that checks whether a number is a palindrome.
 Traverse the list using a loop.
 For each number, print:"""
 
-l=[100,101,500,505,300]
-def isPrime_Palindrome_list(l):
-    for i in l:
-        prime=True
-        palindrome=False
-        if i<=1:
-            prime=False
-        else:
-            for j in range(2,int(i**0.5)+1):
-                if i%j==0:
-                    prime=False
-                    break
+# l=[100,101,500,505,300]
+# def isPrime_Palindrome_list(l):
+#     for i in l:
+#         prime=True
+#         palindrome=False
+#         if i<=1:
+#             prime=False
+#         else:
+#             for j in range(2,int(i**0.5)+1):
+#                 if i%j==0:
+#                     prime=False
+#                     break
         
-        if str(i)==str(i)[::-1]:
-            palindrome=True
-        if prime:
-            print(f"{i} is a Prime number.\n")
-        else:
-            print(f"{i} is not a Prime number.\n")
+#         if str(i)==str(i)[::-1]:
+#             palindrome=True
+#         if prime:
+#             print(f"{i} is a Prime number.\n")
+#         else:
+#             print(f"{i} is not a Prime number.\n")
         
-        if palindrome:
-            print(f"{i} is a Palindrome.\n")
-        else:
-            print(f"{i} is not a Palindrome.\n")
+#         if palindrome:
+#             print(f"{i} is a Palindrome.\n")
+#         else:
+#             print(f"{i} is not a Palindrome.\n")
     
     
     
 
 
 
-isPrime_Palindrome_list(l)
+# isPrime_Palindrome_list(l)
