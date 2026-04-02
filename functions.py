@@ -37,5 +37,16 @@ def Reverse(n):
 # Input: 123 → Output: 321
 print(f"The number in reverse is:{Reverse(n)}")
 # Check Armstrong number
-
+def Armstrong(n):
+    copy=n
+    sum=0
+    while n!=0:
+        a=n%10
+        n=n//10
+        sum=sum+a**3
+    if sum==copy:
+        print(f"Armstrong Number")
+    else:
+        print(f"Not Armstrong Number")
+Armstrong(n)
 # 153 → 1³ + 5³ + 3³ = 153 ✔️
