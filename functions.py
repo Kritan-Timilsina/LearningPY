@@ -17,6 +17,8 @@ SumofDigits(n)
 # Count number of digits
 def NumofDigits(n):
     count=0
+    if n==0:
+        return 1
     while n!=0:
         n=n//10
         count+=1
@@ -25,9 +27,15 @@ print(f"Number of digits is:{NumofDigits(n)}")
 # Input: 1234 → Output: 4
 
 # Reverse a number (without string)
-
+def Reverse(n):
+    rev = 0
+    while n != 0:
+        digit = n % 10
+        rev = rev * 10 + digit
+        n = n // 10
+    return rev
 # Input: 123 → Output: 321
-
+print(f"The number in reverse is:{Reverse(n)}")
 # Check Armstrong number
 
 # 153 → 1³ + 5³ + 3³ = 153 ✔️
