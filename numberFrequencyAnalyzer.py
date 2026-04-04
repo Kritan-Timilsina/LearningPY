@@ -12,6 +12,7 @@ The least frequent number"""
 l=[10,20,10,22,55,88,22,67,100,20,10,18]
 
 
+
 d={}
 
 for i in l:
