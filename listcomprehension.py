@@ -32,20 +32,36 @@ def isPrime(n):
             return False
     return True
 
+
+# 👉 Create:
 p=[i for i in l if isPrime(i)]
 print(p)
-# 👉 Create:
-
 # A list of prime numbers
+def isPalindrome(n):
+    if str(n)==str(n)[::-1]:
+        return  True
+P=[i for i in l if isPalindrome(i)]
 
 # A list of palindrome numbers
-
+print(P)
 # (using your isPrime() and isPalindrome() functions)
 
 # 🔥 Bonus (very good for DSA thinking)
 # From a list, create a new list where:
 # 👉 Each number is replaced by its sum of digits
+def SumofDig(n):
+    s=0
+    if n==0:
 
+        return n
+    while n!=0:
+        d=n%10
+        s+=d
+        n=n//10
+    return s
+s=[SumofDig(i) for i in l]
+print(s)
+        
 # Example:
 
 # [12, 34] → [3, 7]
